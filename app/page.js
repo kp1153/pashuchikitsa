@@ -35,7 +35,8 @@ import Chechak from "@/components/oont/Chechak";
 import Khujli from "@/components/oont/Khujli";
 import Surra from "@/components/oont/Surra";
 import PneumoniaOont from "@/components/oont/Pneumonia";
-import Enterotoxaemia from "@/components/oont/Enterotoxaemia";
+import Aantravishaktta from "@/components/oont/Aantravishaktta";
+
 
 export default function Home() {
   return (
@@ -89,7 +90,7 @@ export default function Home() {
           <Khujli />
           <Surra />
           <PneumoniaOont />
-          <Enterotoxaemia />
+          <Aantravishaktta />
         </section>
       </main>
     </div>
