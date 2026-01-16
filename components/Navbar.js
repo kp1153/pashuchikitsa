@@ -25,7 +25,7 @@ export default function Navbar() {
     { name: "सेवाएं", targetId: "seva", type: "scroll" },
     { name: "ऑनलाइन परामर्श", targetId: "online-paramarsh", type: "scroll" },
     { name: "संपर्क करें", targetId: "sampark", type: "scroll" },
-    { name: "एडमिन", href: "/admin/login", type: "link" },
+   
   ];
 
   return (
