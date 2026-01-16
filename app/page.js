@@ -14,6 +14,12 @@ import TwachaRog from "@/components/kutte/TwachaRog";
 import Hairballs from "@/components/billi/Hairballs";
 import KidneyRog from "@/components/billi/KidneyRog";
 import SardiJukam from "@/components/billi/SardiJukam";
+// भेड़-बकरी
+import PPR from "@/components/bhed-bakri/PPR";
+import KhurpkaMuhpka from "@/components/bhed-bakri/KhurpkaMuhpka";
+import PetKeKeede from "@/components/bhed-bakri/PetKeKeede";
+import Pneumonia from "@/components/bhed-bakri/Pneumonia";
+import Enterotoxemia from "@/components/bhed-bakri/Enterotoxemia";
 
 export default function Home() {
   return (
@@ -39,6 +45,14 @@ export default function Home() {
           <Hairballs />
           <KidneyRog />
           <SardiJukam />
+        </section>
+
+        <section id="bhed-bakri" className="scroll-mt-20">
+          <PPR />
+          <KhurpkaMuhpka />
+          <PetKeKeede />
+          <Pneumonia />
+          <Enterotoxemia />
         </section>
       </main>
     </div>
