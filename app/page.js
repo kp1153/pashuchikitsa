@@ -1,4 +1,3 @@
-// app/page.js
 import HeroSection from "@/components/HeroSection";
 // गाय-भैंस
 import Thanela from "@/components/maweshi/Thanela";
@@ -19,7 +18,6 @@ import PPR from "@/components/bhed-bakri/PPR";
 import KhurpkaMuhpka from "@/components/bhed-bakri/KhurpkaMuhpka";
 import PetKeKeede from "@/components/bhed-bakri/PetKeKeede";
 import Pneumonia from "@/components/bhed-bakri/Pneumonia";
-import Enterotoxemia from "@/components/bhed-bakri/Enterotoxemia";
 
 export default function Home() {
   return (
@@ -52,7 +50,6 @@ export default function Home() {
           <KhurpkaMuhpka />
           <PetKeKeede />
           <Pneumonia />
-          <Enterotoxemia />
         </section>
       </main>
     </div>
