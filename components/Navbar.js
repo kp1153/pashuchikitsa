@@ -28,38 +28,41 @@ export default function Navbar() {
 
   return (
     <nav className="bg-[#006680] py-4 shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4">
+      <div className="w-full px-4"> {/* container को w-full किया ताकि पूरी चौड़ाई मिले */}
+        
         {/* DESKTOP VIEW */}
-        <div className="hidden md:block text-center">
-          <div className="flex justify-center mb-4">
+        <div className="hidden md:block">
+          <div className="text-center mb-6">
             <Link href="/">
-              <h1 className="text-3xl font-bold text-white">
+              <h1 className="text-4xl font-bold text-white tracking-wide">
                 पशु चिकित्सक शुक्ला
               </h1>
             </Link>
           </div>
 
-          {/* मेनू आइटम्स - यहाँ से एक्स्ट्रा बैकग्राउंड हटा दिया गया है */}
-          <div className="flex justify-center gap-2 flex-wrap pt-2 border-t border-white/10">
-            {menuItems.map((item) => (
-              item.type === "scroll" ? (
-                <button
-                  key={item.targetId}
-                  onClick={(e) => handleClick(e, item.targetId)}
-                  className="text-white font-bold px-4 py-2 hover:bg-white hover:text-[#006680] transition rounded-md"
-                >
-                  {item.name}
-                </button>
-              ) : (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-white font-bold px-4 py-2 hover:bg-white hover:text-[#006680] transition rounded-md"
-                >
-                  {item.name}
-                </Link>
-              )
-            ))}
+          {/* मेनू - एकदम लेफ्ट से एकदम राइट तक एक लाइन में */}
+          <div className="border-t border-white/20 pt-4">
+            <div className="flex justify-between items-center w-full max-w-7xl mx-auto">
+              {menuItems.map((item) => (
+                item.type === "scroll" ? (
+                  <button
+                    key={item.targetId}
+                    onClick={(e) => handleClick(e, item.targetId)}
+                    className="text-white font-bold text-sm lg:text-base hover:text-yellow-400 transition-colors whitespace-nowrap px-2"
+                  >
+                    {item.name}
+                  </button>
+                ) : (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-white font-bold text-sm lg:text-base hover:text-yellow-400 transition-colors whitespace-nowrap px-2"
+                  >
+                    {item.name}
+                  </Link>
+                )
+              ))}
+            </div>
           </div>
         </div>
 
@@ -71,7 +74,6 @@ export default function Navbar() {
                 पशु चिकित्सक शुक्ला
               </h1>
             </Link>
-
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white border border-white/30 p-2 rounded"
@@ -81,20 +83,20 @@ export default function Navbar() {
           </div>
 
           {isOpen && (
-            <ul className="mt-4 space-y-1">
+            <ul className="mt-4 bg-[#004d61] rounded-lg overflow-hidden">
               {menuItems.map((item) => (
-                <li key={item.targetId || item.href}>
+                <li key={item.targetId || item.href} className="border-b border-white/10 last:border-none">
                   {item.type === "scroll" ? (
                     <button
                       onClick={(e) => handleClick(e, item.targetId)}
-                      className="block w-full text-white text-center py-3 font-bold hover:bg-white hover:text-[#006680] transition rounded"
+                      className="block w-full text-white text-center py-4 font-bold hover:bg-white hover:text-[#006680]"
                     >
                       {item.name}
                     </button>
                   ) : (
                     <Link
                       href={item.href}
-                      className="block text-white text-center py-3 font-bold hover:bg-white hover:text-[#006680] transition rounded"
+                      className="block text-white text-center py-4 font-bold hover:bg-white hover:text-[#006680]"
                       onClick={() => setIsOpen(false)}
                     >
                       {item.name}
