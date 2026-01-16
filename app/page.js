@@ -2,6 +2,9 @@
 import HeroSection from "@/components/HeroSection";
 import Thanela from "@/components/maweshi/Thanela";
 import MuhpkaKhurpka from "@/components/maweshi/MuhpkaKhurpka";
+import Afara from "@/components/maweshi/Afara";
+import PrajananSamasya from "@/components/maweshi/PrajananSamasya";
+import Langdapan from "@/components/maweshi/Langdapan";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
         <div id="गाय-भैंस-रोग">
           <Thanela />
           <MuhpkaKhurpka />
+          <Afara />
+          <PrajananSamasya />
+          <Langdapan />
         </div>
         
         {/* बाकी sections यहाँ आएंगे */}
