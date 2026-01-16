@@ -23,6 +23,7 @@ export default function Navbar() {
     { name: "घोड़ा रोग", targetId: "ghoda", type: "scroll" },
     { name: "ऊँट रोग", targetId: "oont", type: "scroll" },
     { name: "सेवाएं", targetId: "seva", type: "scroll" },
+    { name: "ऑनलाइन परामर्श", targetId: "online-paramarsh", type: "scroll" },
     { name: "संपर्क करें", targetId: "sampark", type: "scroll" },
   ];
 

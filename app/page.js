@@ -184,6 +184,69 @@ export default function Home() {
     </div>
   </div>
 </section>
+{/* ऑनलाइन परामर्श */}
+<section id="online-paramarsh" className="scroll-mt-20">
+  <div className="py-12 px-4 bg-white">
+    <div className="max-w-3xl mx-auto">
+      <h1 className="text-4xl font-bold text-[#006680] text-center mb-8">
+        ऑनलाइन परामर्श
+      </h1>
+      
+      <div className="bg-gradient-to-br from-[#006680] to-[#004d61] rounded-lg shadow-xl p-8 text-white">
+        <div className="text-center mb-6">
+          <p className="text-3xl font-bold mb-2">परामर्श शुल्क: ₹500</p>
+          <p className="text-lg opacity-90">24/7 उपलब्ध सेवा</p>
+        </div>
+
+        <div className="bg-white/10 rounded-lg p-6 mb-6">
+          <h3 className="text-xl font-bold mb-4">परामर्श प्रक्रिया:</h3>
+          <ol className="space-y-3 text-lg">
+            <li className="flex items-start">
+              <span className="font-bold mr-2">1.</span>
+              <span>नीचे दिए गए नंबर पर फोन या व्हाट्सऐप करें</span>
+            </li>
+            <li className="flex items-start">
+              <span className="font-bold mr-2">2.</span>
+              <span>अपने पशु की समस्या बताएं</span>
+            </li>
+            <li className="flex items-start">
+              <span className="font-bold mr-2">3.</span>
+              <span>व्हाट्सऐप वीडियो कॉल पर पशु दिखाएं</span>
+            </li>
+            <li className="flex items-start">
+              <span className="font-bold mr-2">4.</span>
+              <span>डॉक्टर द्वारा भेजे गए पेमेंट लिंक से ₹500 का भुगतान करें</span>
+            </li>
+            <li className="flex items-start">
+              <span className="font-bold mr-2">5.</span>
+              <span>भुगतान के बाद आपको परचे की फोटो भेज दी जाएगी</span>
+            </li>
+          </ol>
+        </div>
+
+        <div className="text-center space-y-4">
+          <a 
+            href="https://wa.me/919918921792?text=नमस्ते%20डॉक्टर,%20मुझे%20पशु%20परामर्श%20चाहिए"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-green-500 hover:bg-green-600 text-white font-bold text-xl px-8 py-4 rounded-lg transition-colors shadow-lg"
+          >
+            📱 व्हाट्सऐप पर संपर्क करें
+          </a>
+          <p className="text-lg">
+            या फोन करें: <a href="tel:+919918921792" className="font-bold underline">+91 9918921792</a>
+          </p>
+        </div>
+      </div>
+
+      <div className="mt-8 bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded">
+        <p className="text-gray-800 text-lg">
+          <strong>नोट:</strong> आपातकालीन स्थिति में तुरंत नजदीकी पशु चिकित्सालय से संपर्क करें।
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* संपर्क करें */}
         <section id="sampark" className="scroll-mt-20">
