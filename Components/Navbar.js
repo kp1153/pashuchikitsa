@@ -29,7 +29,7 @@ export default function Navbar() {
             </Link>
             <Link 
               href="#कुत्ते-बिल्ली-रोग" 
-              className="px-4 py-2 rounded-md hover:bg-amber-800 transition-colors"
+              className="px-4 py-2 rounded-md hover:bg-amber-700 transition-colors"
             >
               कुत्ते-बिल्ली रोग
             </Link>
