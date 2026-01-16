@@ -18,6 +18,12 @@ import PPR from "@/components/bhed-bakri/PPR";
 import KhurpkaMuhpka from "@/components/bhed-bakri/KhurpkaMuhpka";
 import PetKeKeede from "@/components/bhed-bakri/PetKeKeede";
 import Pneumonia from "@/components/bhed-bakri/Pneumonia";
+// घोड़ा
+import Colic from "@/components/ghoda/Colic";
+import Galghotoo from "@/components/ghoda/Galghotoo";
+import GhodaKaFlu from "@/components/ghoda/GhodaKaFlu";
+import KhurKiSujan from "@/components/ghoda/KhurKiSujan";
+import Tetanus from "@/components/ghoda/Tetanus";
 
 export default function Home() {
   return (
@@ -50,6 +56,14 @@ export default function Home() {
           <KhurpkaMuhpka />
           <PetKeKeede />
           <Pneumonia />
+        </section>
+
+        <section id="ghoda" className="scroll-mt-20">
+          <Colic />
+          <Galghotoo />
+          <GhodaKaFlu />
+          <KhurKiSujan />
+          <Tetanus />
         </section>
       </main>
     </div>
