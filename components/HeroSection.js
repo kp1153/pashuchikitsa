@@ -9,6 +9,7 @@ const images = [
   "/4.jpg",
   "/5.jpg",
   "/6.jpg",
+  "/7.jpg",
 ];
 
 export default function HeroSection() {
